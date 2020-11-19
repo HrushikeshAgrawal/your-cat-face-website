@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script defer src="face-api.min.js"></script>
+    <script defer src="script.js"></script>
+    <title>Face Recognition</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="before">Loading...</div>
+    <div id="after">
+      <h1 style="text-align: center;">Which Cat Are You Today? :)</h1>
+      <div class="status" id="status">
+        <input type="file" id="imageUpload" />
+        <input
+          type="checkbox"
+          id="toggleLandmarks"
+          onChange="toggleLandmarks()"
+          checked
+        />Landmarks
+        <input
+          type="checkbox"
+          id="toggleExpressions"
+          onChange="toggleExpressions()"
+          checked
+        />Expressions
+      </div>
+      <div class="outerDiv">
+        <div class="left">
+          <h1 style="margin-top: 0;">Your Face</h1>
+          <div class="userFace" id="userFace"></div>
+        </div>
+        <div class="right">
+          <h1 style="margin-top: 0;">Cat Face</h1>
+          <div class="cats" id="cats"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

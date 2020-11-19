@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.outerDiv {
+  display: flex;
+  width: 100vw;
+}
+.userFace,
+.cats {
+  width: 49vw;
+  height: 80vh;
+  overflow: scroll;
+  padding: 8px;
+}
+.status {
+  /* height: 10vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cats h3 {
+  text-align: center;
+}
+#after {
+  display: none;
+}
+
+@media (max-width: 550px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  .status {
+    flex-direction: column;
+  }
+
+  .outerDiv {
+    flex-direction: column;
+  }
+
+  .userFace,
+  .cats {
+    width: 90vw;
+    height: 30vh;
+  }
+}
